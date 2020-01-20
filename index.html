@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>RevengeOS for Lenovo</title>
+    <style>
+        @font-face {
+            font-family: 'Aileron Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Aileron Regular'), url('fonts/Aileron-Regular.otf') format('opentype');
+        }
+
+            @font-face {
+            font-family: 'Aileron SemiBold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Aileron SemiBold'), url('fonts/Aileron-SemiBold.otf') format('opentype');
+        }
+
+            @font-face {
+            font-family: 'Aileron Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Aileron Bold'), url('fonts/Aileron-Bold.otf') format('opentype');
+        }
+
+        body {
+            margin:0;
+        }
+        #background {
+            background: linear-gradient(45deg, #00294E, #0073A9);
+            background-attachment: fixed;
+        }
+
+        #title {
+            color: white;
+            font-family: Aileron SemiBold;
+            font-size: 4.85em;
+            text-align: center;
+            text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+        }
+
+        #device-grid {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .device-card {
+        }
+
+        .device-image {
+            width: 285px;
+            height: auto;
+        }
+    </style>
+</head>
+<body id="background">
+    <div id="content">
+        <header>
+            <h1 id="title">RevengeOS for Lenovo</h1>
+        </header>
+        <section id="device-grid">
+            <div id="zippo" class="device-card">
+                <img class="device-image" src="media/img/zippo.png"></img>
+            </div>
+            <div id="heart" class="device-card">
+                <img class="device-image" src="media/img/heart.png"></img>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
