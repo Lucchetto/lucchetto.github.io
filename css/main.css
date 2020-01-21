@@ -1,3 +1,5 @@
+a { text-decoration: none; }
+
 body {
     margin: 0;
 }
@@ -60,8 +62,8 @@ section {
 #file-data-container {
     display: flex;
     flex-flow: column;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 30px;
+    margin-top: 0;
 }
 
 .file-data {
@@ -77,5 +79,28 @@ section {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    text-align: center;
     font-size: 1.75em;
+}
+
+.button {
+    background: white;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    margin: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 160px;
+    text-align: center;
+}
+
+#donation-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
