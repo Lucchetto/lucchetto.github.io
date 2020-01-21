@@ -35,23 +35,35 @@
 
         #title {
             color: white;
-            font-family: Aileron SemiBold;
-            font-size: 4.85em;
+            font-family: Aileron Regular;
+            font-size: 4.15em;
             text-align: center;
             text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
         }
 
         #device-grid {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
 
         .device-card {
+            flex-grow: 0;
+            padding: 35px;
         }
 
         .device-image {
             width: 285px;
             height: auto;
+        }
+
+        .device-name {
+            color: white;
+            text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+            font-family: Aileron Regular;
+            text-align: center;
+            font-size: 2.3em;
         }
     </style>
 </head>
@@ -63,9 +75,11 @@
         <section id="device-grid">
             <div id="zippo" class="device-card">
                 <img class="device-image" src="media/img/zippo.png"></img>
+                <h2 class="device-name">Z6 Pro</h2>
             </div>
             <div id="heart" class="device-card">
                 <img class="device-image" src="media/img/heart.png"></img>
+                <h2 class="device-name">Z5 Pro GT</h2>
             </div>
         </section>
     </div>
